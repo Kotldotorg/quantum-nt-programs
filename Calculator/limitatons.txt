@@ -1,0 +1,1 @@
+This is just a very simple calculator program, it cannot solve problems with more than 2 number yet and it doesn't have a scientific mode.
