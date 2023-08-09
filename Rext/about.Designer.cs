@@ -42,7 +42,7 @@ namespace Rex_ED
             richTextBox1.ReadOnly = true;
             richTextBox1.Size = new Size(359, 114);
             richTextBox1.TabIndex = 0;
-            richTextBox1.Text = "About Kotl Rext\nVersion 0.1 (Alpha)\nBuild: Error (Not running on Quantum NT)\n\n\nCopyright (c) 2023 Moise Tiberiu\nThis program is under the Kotl Public License 1.0\n";
+            richTextBox1.Text = "About Kotl Rext\nVersion 0.1.1 (Alpha with .NET 8)\nBuild: Error (Not running on Quantum NT)\n\n\nCopyright (c) 2023 Moise Tiberiu\nThis program is under the Further Kotl Public License 1.0\n";
             // 
             // about
             // 

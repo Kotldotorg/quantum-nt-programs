@@ -96,5 +96,10 @@ namespace Rex_ED
             about frm1 = new about();
             frm1.Show();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

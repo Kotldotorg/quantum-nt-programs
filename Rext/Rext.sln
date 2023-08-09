@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34004.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rext", "Rext.csproj", "{736BB161-3D0A-4330-B717-FAE182723C1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{736BB161-3D0A-4330-B717-FAE182723C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736BB161-3D0A-4330-B717-FAE182723C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736BB161-3D0A-4330-B717-FAE182723C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736BB161-3D0A-4330-B717-FAE182723C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7485C17-1719-43A6-9F4C-54429CF641F5}
+	EndGlobalSection
+EndGlobal
