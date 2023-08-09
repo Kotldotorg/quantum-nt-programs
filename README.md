@@ -1,3 +1,4 @@
+# ATTENTION: ALL PROGRAMS HAVE BEEN MIGRATED TO .NET 8.0 PREVIEW, TO COMPILE THEM YOU NEED VISUAL STUDIO 2022 PREVIEW AND .NET 8 SDK
 # Quantum NT Programs
 #### This is the source code for all the Quantum NT programs that replicate the ones from Windows NT.
 #### Since the core of the Quantum NT Project is under the GPL-2.0, we have to make a seperate repo to use the Further Kotl Public License 1.0
