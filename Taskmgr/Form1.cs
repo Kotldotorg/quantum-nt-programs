@@ -1,14 +1,7 @@
 // Copyright (c) Moise Tiberiu 2023
 
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Taskmgr
@@ -36,7 +29,7 @@ namespace Taskmgr
         private void button1_Click(object sender, EventArgs e)
         {
             try
-            { 
+            {
                 proc[listBox1.SelectedIndex].Kill();
                 GetAllProcess();
             }
@@ -49,9 +42,9 @@ namespace Taskmgr
 
         private void runNewTaskToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using(frmRunTask frm = new frmRunTask())
+            using (frmRunTask frm = new frmRunTask())
             {
-                if(frm.ShowDialog() == DialogResult.OK)
+                if (frm.ShowDialog() == DialogResult.OK)
                     GetAllProcess();
             }
 
@@ -99,6 +92,16 @@ namespace Taskmgr
             startInfo.Arguments = "/C shutdown /l";
             process.StartInfo = startInfo;
             process.Start();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

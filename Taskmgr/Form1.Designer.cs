@@ -30,129 +30,133 @@ namespace Taskmgr
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.runNewTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.specialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sleepToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            menuStrip1 = new System.Windows.Forms.MenuStrip();
+            optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            runNewTaskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            specialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            sleepToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            sessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            logoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            listBox1 = new System.Windows.Forms.ListBox();
+            button1 = new System.Windows.Forms.Button();
+            exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionsToolStripMenuItem,
-            this.specialToolStripMenuItem,
-            this.sessionToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(409, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { optionsToolStripMenuItem, specialToolStripMenuItem, sessionToolStripMenuItem });
+            menuStrip1.Location = new System.Drawing.Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            menuStrip1.Size = new System.Drawing.Size(477, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // optionsToolStripMenuItem
             // 
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.runNewTaskToolStripMenuItem});
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.optionsToolStripMenuItem.Text = "File";
+            optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { runNewTaskToolStripMenuItem, exitToolStripMenuItem });
+            optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            optionsToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            optionsToolStripMenuItem.Text = "File";
             // 
             // runNewTaskToolStripMenuItem
             // 
-            this.runNewTaskToolStripMenuItem.Name = "runNewTaskToolStripMenuItem";
-            this.runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.runNewTaskToolStripMenuItem.Text = "Run new task";
-            this.runNewTaskToolStripMenuItem.Click += new System.EventHandler(this.runNewTaskToolStripMenuItem_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(13, 32);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(384, 381);
-            this.listBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(322, 419);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "End Task";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            runNewTaskToolStripMenuItem.Name = "runNewTaskToolStripMenuItem";
+            runNewTaskToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            runNewTaskToolStripMenuItem.Text = "Run new task";
+            runNewTaskToolStripMenuItem.Click += runNewTaskToolStripMenuItem_Click;
             // 
             // specialToolStripMenuItem
             // 
-            this.specialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.shutdownToolStripMenuItem,
-            this.restartToolStripMenuItem,
-            this.sleepToolStripMenuItem});
-            this.specialToolStripMenuItem.Name = "specialToolStripMenuItem";
-            this.specialToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.specialToolStripMenuItem.Text = "Special";
+            specialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { shutdownToolStripMenuItem, restartToolStripMenuItem, sleepToolStripMenuItem });
+            specialToolStripMenuItem.Name = "specialToolStripMenuItem";
+            specialToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            specialToolStripMenuItem.Text = "Special";
             // 
             // shutdownToolStripMenuItem
             // 
-            this.shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
-            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.shutdownToolStripMenuItem.Text = "Shutdown";
-            this.shutdownToolStripMenuItem.Click += new System.EventHandler(this.shutdownToolStripMenuItem_Click);
+            shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
+            shutdownToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            shutdownToolStripMenuItem.Text = "Shutdown";
+            shutdownToolStripMenuItem.Click += shutdownToolStripMenuItem_Click;
             // 
             // restartToolStripMenuItem
             // 
-            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.restartToolStripMenuItem.Text = "Restart";
-            this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
+            restartToolStripMenuItem.Name = "restartToolStripMenuItem";
+            restartToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            restartToolStripMenuItem.Text = "Restart";
+            restartToolStripMenuItem.Click += restartToolStripMenuItem_Click;
             // 
             // sleepToolStripMenuItem
             // 
-            this.sleepToolStripMenuItem.Name = "sleepToolStripMenuItem";
-            this.sleepToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sleepToolStripMenuItem.Text = "Sleep";
-            this.sleepToolStripMenuItem.Click += new System.EventHandler(this.sleepToolStripMenuItem_Click);
+            sleepToolStripMenuItem.Name = "sleepToolStripMenuItem";
+            sleepToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            sleepToolStripMenuItem.Text = "Sleep";
+            sleepToolStripMenuItem.Click += sleepToolStripMenuItem_Click;
             // 
             // sessionToolStripMenuItem
             // 
-            this.sessionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logoffToolStripMenuItem});
-            this.sessionToolStripMenuItem.Name = "sessionToolStripMenuItem";
-            this.sessionToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.sessionToolStripMenuItem.Text = "Session";
+            sessionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { logoffToolStripMenuItem });
+            sessionToolStripMenuItem.Name = "sessionToolStripMenuItem";
+            sessionToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            sessionToolStripMenuItem.Text = "Session";
             // 
             // logoffToolStripMenuItem
             // 
-            this.logoffToolStripMenuItem.Name = "logoffToolStripMenuItem";
-            this.logoffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.logoffToolStripMenuItem.Text = "Logoff";
-            this.logoffToolStripMenuItem.Click += new System.EventHandler(this.logoffToolStripMenuItem_Click);
+            logoffToolStripMenuItem.Name = "logoffToolStripMenuItem";
+            logoffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            logoffToolStripMenuItem.Text = "Logoff";
+            logoffToolStripMenuItem.Click += logoffToolStripMenuItem_Click;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new System.Drawing.Point(15, 37);
+            listBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new System.Drawing.Size(447, 439);
+            listBox1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            button1.Location = new System.Drawing.Point(376, 483);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(88, 27);
+            button1.TabIndex = 2;
+            button1.Text = "End Task";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Task Manager";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(477, 519);
+            Controls.Add(button1);
+            Controls.Add(listBox1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Form1";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Task Manager";
+            Load += Form1_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -168,6 +172,7 @@ namespace Taskmgr
         private System.Windows.Forms.ToolStripMenuItem sleepToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sessionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoffToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 
