@@ -1,3 +1,5 @@
+// Copyright (c) Moise Tiberiu 2023
+
 namespace Rex_ED
 {
     internal static class Program

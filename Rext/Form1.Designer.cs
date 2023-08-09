@@ -1,4 +1,6 @@
-﻿namespace Rex_ED
+﻿// Copyright (c) Moise Tiberiu 2023
+
+namespace Rex_ED
 {
     partial class Form1
     {

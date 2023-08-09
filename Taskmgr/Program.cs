@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright (c) Moise Tiberiu 2023
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

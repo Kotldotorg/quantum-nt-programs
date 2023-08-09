@@ -1,4 +1,6 @@
-﻿namespace Taskmgr
+﻿// Copyright (c) Moise Tiberiu 2023
+
+namespace Taskmgr
 {
     partial class Form1
     {

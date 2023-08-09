@@ -1,4 +1,6 @@
-﻿namespace Calculator
+﻿// Copyright (c) Moise Tiberiu 2023
+
+namespace Calculator
 {
     partial class Form1
     {

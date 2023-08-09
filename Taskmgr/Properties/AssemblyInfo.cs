@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿// Copyright (c) Moise Tiberiu 2023
+
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 

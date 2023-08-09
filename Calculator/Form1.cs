@@ -1,3 +1,5 @@
+// Copyright (c) Moise Tiberiu 2023
+
 namespace Calculator
 {
     public partial class Form1 : Form
