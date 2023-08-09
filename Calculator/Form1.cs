@@ -203,5 +203,23 @@ namespace Calculator
             valueSecond = 0.0m;
             TextBox.Text = "0";
         }
+
+        private void clearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            valueFirst = 0.0m;
+            valueSecond = 0.0m;
+            TextBox.Text = "0";
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            about frm1 = new about();
+            frm1.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

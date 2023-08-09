@@ -48,12 +48,19 @@ namespace Calculator
             Equal = new Button();
             Dot = new Button();
             Clear = new Button();
+            menuStrip1 = new MenuStrip();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            clearToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // TextBox
             // 
-            TextBox.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            TextBox.Location = new Point(18, 12);
+            TextBox.Font = new Font("Segoe UI", 15F);
+            TextBox.Location = new Point(18, 26);
             TextBox.Name = "TextBox";
             TextBox.Size = new Size(318, 34);
             TextBox.TabIndex = 0;
@@ -61,8 +68,8 @@ namespace Calculator
             // 
             // Seven
             // 
-            Seven.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Seven.Location = new Point(18, 52);
+            Seven.Font = new Font("Segoe UI", 12F);
+            Seven.Location = new Point(18, 66);
             Seven.Name = "Seven";
             Seven.Size = new Size(75, 56);
             Seven.TabIndex = 1;
@@ -72,8 +79,8 @@ namespace Calculator
             // 
             // Four
             // 
-            Four.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Four.Location = new Point(18, 114);
+            Four.Font = new Font("Segoe UI", 12F);
+            Four.Location = new Point(18, 128);
             Four.Name = "Four";
             Four.Size = new Size(75, 56);
             Four.TabIndex = 2;
@@ -83,8 +90,8 @@ namespace Calculator
             // 
             // One
             // 
-            One.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            One.Location = new Point(18, 176);
+            One.Font = new Font("Segoe UI", 12F);
+            One.Location = new Point(18, 190);
             One.Name = "One";
             One.Size = new Size(75, 56);
             One.TabIndex = 3;
@@ -94,8 +101,8 @@ namespace Calculator
             // 
             // Zero
             // 
-            Zero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Zero.Location = new Point(18, 238);
+            Zero.Font = new Font("Segoe UI", 12F);
+            Zero.Location = new Point(18, 252);
             Zero.Name = "Zero";
             Zero.Size = new Size(75, 56);
             Zero.TabIndex = 4;
@@ -105,8 +112,8 @@ namespace Calculator
             // 
             // Eight
             // 
-            Eight.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Eight.Location = new Point(99, 52);
+            Eight.Font = new Font("Segoe UI", 12F);
+            Eight.Location = new Point(99, 66);
             Eight.Name = "Eight";
             Eight.Size = new Size(75, 56);
             Eight.TabIndex = 5;
@@ -116,8 +123,8 @@ namespace Calculator
             // 
             // Five
             // 
-            Five.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Five.Location = new Point(99, 114);
+            Five.Font = new Font("Segoe UI", 12F);
+            Five.Location = new Point(99, 128);
             Five.Name = "Five";
             Five.Size = new Size(75, 56);
             Five.TabIndex = 6;
@@ -127,8 +134,8 @@ namespace Calculator
             // 
             // Two
             // 
-            Two.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Two.Location = new Point(99, 176);
+            Two.Font = new Font("Segoe UI", 12F);
+            Two.Location = new Point(99, 190);
             Two.Name = "Two";
             Two.Size = new Size(75, 56);
             Two.TabIndex = 7;
@@ -138,8 +145,8 @@ namespace Calculator
             // 
             // Nine
             // 
-            Nine.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Nine.Location = new Point(180, 52);
+            Nine.Font = new Font("Segoe UI", 12F);
+            Nine.Location = new Point(180, 66);
             Nine.Name = "Nine";
             Nine.Size = new Size(75, 56);
             Nine.TabIndex = 8;
@@ -149,8 +156,8 @@ namespace Calculator
             // 
             // Six
             // 
-            Six.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Six.Location = new Point(180, 114);
+            Six.Font = new Font("Segoe UI", 12F);
+            Six.Location = new Point(180, 128);
             Six.Name = "Six";
             Six.Size = new Size(75, 56);
             Six.TabIndex = 9;
@@ -160,8 +167,8 @@ namespace Calculator
             // 
             // Three
             // 
-            Three.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Three.Location = new Point(180, 176);
+            Three.Font = new Font("Segoe UI", 12F);
+            Three.Location = new Point(180, 190);
             Three.Name = "Three";
             Three.Size = new Size(75, 56);
             Three.TabIndex = 10;
@@ -171,8 +178,8 @@ namespace Calculator
             // 
             // Plus
             // 
-            Plus.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Plus.Location = new Point(99, 238);
+            Plus.Font = new Font("Segoe UI", 12F);
+            Plus.Location = new Point(99, 252);
             Plus.Name = "Plus";
             Plus.Size = new Size(75, 56);
             Plus.TabIndex = 11;
@@ -182,8 +189,8 @@ namespace Calculator
             // 
             // Minus
             // 
-            Minus.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Minus.Location = new Point(180, 238);
+            Minus.Font = new Font("Segoe UI", 12F);
+            Minus.Location = new Point(180, 252);
             Minus.Name = "Minus";
             Minus.Size = new Size(75, 56);
             Minus.TabIndex = 12;
@@ -193,8 +200,8 @@ namespace Calculator
             // 
             // Multiply
             // 
-            Multiply.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Multiply.Location = new Point(261, 52);
+            Multiply.Font = new Font("Segoe UI", 12F);
+            Multiply.Location = new Point(261, 66);
             Multiply.Name = "Multiply";
             Multiply.Size = new Size(75, 56);
             Multiply.TabIndex = 13;
@@ -204,8 +211,8 @@ namespace Calculator
             // 
             // Divide
             // 
-            Divide.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Divide.Location = new Point(261, 114);
+            Divide.Font = new Font("Segoe UI", 12F);
+            Divide.Location = new Point(261, 128);
             Divide.Name = "Divide";
             Divide.Size = new Size(75, 56);
             Divide.TabIndex = 14;
@@ -215,8 +222,8 @@ namespace Calculator
             // 
             // Equal
             // 
-            Equal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Equal.Location = new Point(261, 238);
+            Equal.Font = new Font("Segoe UI", 12F);
+            Equal.Location = new Point(261, 252);
             Equal.Name = "Equal";
             Equal.Size = new Size(75, 56);
             Equal.TabIndex = 15;
@@ -226,8 +233,8 @@ namespace Calculator
             // 
             // Dot
             // 
-            Dot.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Dot.Location = new Point(261, 176);
+            Dot.Font = new Font("Segoe UI", 12F);
+            Dot.Location = new Point(261, 190);
             Dot.Name = "Dot";
             Dot.Size = new Size(75, 56);
             Dot.TabIndex = 16;
@@ -237,7 +244,7 @@ namespace Calculator
             // 
             // Clear
             // 
-            Clear.Location = new Point(261, 300);
+            Clear.Location = new Point(261, 317);
             Clear.Name = "Clear";
             Clear.Size = new Size(75, 23);
             Clear.TabIndex = 17;
@@ -245,12 +252,56 @@ namespace Calculator
             Clear.UseVisualStyleBackColor = true;
             Clear.Click += Clear_Click;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, helpToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(356, 24);
+            menuStrip1.TabIndex = 18;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { clearToolStripMenuItem, exitToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Text = "File";
+            // 
+            // clearToolStripMenuItem
+            // 
+            clearToolStripMenuItem.Name = "clearToolStripMenuItem";
+            clearToolStripMenuItem.Size = new Size(180, 22);
+            clearToolStripMenuItem.Text = "Clear";
+            clearToolStripMenuItem.Click += clearToolStripMenuItem_Click;
+            // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(180, 22);
+            exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
+            // 
+            // helpToolStripMenuItem
+            // 
+            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aboutToolStripMenuItem });
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            helpToolStripMenuItem.Size = new Size(44, 20);
+            helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Size = new Size(180, 22);
+            aboutToolStripMenuItem.Text = "About";
+            aboutToolStripMenuItem.Click += aboutToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(356, 339);
+            ClientSize = new Size(356, 352);
             Controls.Add(Clear);
             Controls.Add(Dot);
             Controls.Add(Equal);
@@ -269,10 +320,14 @@ namespace Calculator
             Controls.Add(Four);
             Controls.Add(Seven);
             Controls.Add(TextBox);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
             Text = "Calculator";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -297,5 +352,11 @@ namespace Calculator
         private Button Equal;
         private Button Dot;
         private Button Clear;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem clearToolStripMenuItem;
+        private ToolStripMenuItem exitToolStripMenuItem;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
